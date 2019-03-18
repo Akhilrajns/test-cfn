@@ -1,0 +1,18 @@
+{
+  "Parameters" : {
+    "KeyName" : "cfn"
+  },
+  "Tags" : {
+    "purpose" : "training"
+  },
+  "StackPolicy" : {
+    "Statement" : [
+      {
+        "Effect" : "Allow",
+        "NotAction" : "Update:Delete",
+        "Principal": "*",
+        "Resource" : "*"
+      }
+    ]
+  }
+}
